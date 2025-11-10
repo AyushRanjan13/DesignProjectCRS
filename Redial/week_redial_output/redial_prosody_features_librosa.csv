@@ -1,0 +1,6 @@
+audio_path,f0_mean,f0_std,rms_mean,spec_cent_mean,tempo
+C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Redial\week_redial_output\Training\AudioFiles\train_dialogue_1_Male_A.wav,91.93405332898287,14.762943921544935,0.06250178068876266,1157.1349062936877,151.99908088235293
+C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Redial\week_redial_output\Training\AudioFiles\train_dialogue_2_Male_B.wav,90.2264995065027,10.277854008439597,0.06012478470802307,1069.269216847345,151.99908088235293
+C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Redial\week_redial_output\Training\AudioFiles\train_dialogue_3_Male_A.wav,92.17799619582726,14.757481243726726,0.08839181810617447,1340.0251547201508,135.99917763157896
+C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Redial\week_redial_output\Training\AudioFiles\train_dialogue_4_Male_A.wav,87.18430181196652,9.332475886172745,0.09510009735822678,1368.6971928624948,161.4990234375
+C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Redial\week_redial_output\Training\AudioFiles\train_dialogue_5_Male_A.wav,107.88778939124121,14.796650395957174,0.05374153330922127,1298.865928083631,99.38401442307692

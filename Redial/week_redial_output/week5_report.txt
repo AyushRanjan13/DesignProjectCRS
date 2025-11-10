@@ -1,0 +1,65 @@
+
+========= WEEK 5: SPEECH-TEXT REPRESENTATION (ReDial) =========
+
+[WEEK5] Training with Contrastive + Masked Prediction Objectives
+[WEEK5] Loaded training metadata -> 182150 samples
+[WEEK5] Generating text embeddings...
+[WEEK5] Generating audio embeddings...
+
+[WEEK5] Training for 8 epochs...
+[WEEK5] Loss weights: Contrastive=1.0, Masked=0.5
+
+Epoch 1/8
+  Total Loss: 3.4702
+  Contrastive: 3.4694
+  Masked Text: 0.0016
+  Masked Audio: 0.0000
+Epoch 2/8
+  Total Loss: 3.4669
+  Contrastive: 3.4660
+  Masked Text: 0.0017
+  Masked Audio: 0.0000
+Epoch 3/8
+  Total Loss: 3.4665
+  Contrastive: 3.4657
+  Masked Text: 0.0017
+  Masked Audio: 0.0000
+Epoch 4/8
+  Total Loss: 3.4665
+  Contrastive: 3.4656
+  Masked Text: 0.0018
+  Masked Audio: 0.0000
+Epoch 5/8
+  Total Loss: 18.5181
+  Contrastive: 3.4656
+  Masked Text: 0.0019
+  Masked Audio: 30.1032
+Epoch 6/8
+  Total Loss: 8.2831
+  Contrastive: 3.4654
+  Masked Text: 0.0019
+  Masked Audio: 9.6335
+Epoch 7/8
+  Total Loss: 3.4665
+  Contrastive: 3.4656
+  Masked Text: 0.0019
+  Masked Audio: 0.0000
+Epoch 8/8
+  Total Loss: 7.4251
+  Contrastive: 3.4654
+  Masked Text: 0.0019
+  Masked Audio: 7.9175
+
+[WEEK5] Aligner model saved -> week_redial_output\week5_encoder.joblib
+[WEEK5] Train embeddings saved -> week_redial_output\speech_text_embeddings_train.csv
+[WEEK5] Embedding shape: (182150, 512)
+[WEEK5] Columns: 256 text + 256 audio = 512 total
+
+[WEEK5] ===== TRAINING SUMMARY =====
+[WEEK5] Dataset size: 182150 samples
+[WEEK5] Text embedding dim: 384
+[WEEK5] Audio embedding dim: 64
+[WEEK5] Projection dim: 256
+[WEEK5] Training epochs: 8
+[WEEK5] Batch size: 32
+[WEEK5] Objectives: Contrastive Learning + Masked Prediction

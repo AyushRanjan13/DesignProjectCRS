@@ -1,0 +1,65 @@
+
+========= WEEK 5 (INSPIRED): SPEECH-TEXT REPRESENTATION =========
+
+[W5-INSPIRED] Training with Contrastive + Masked Prediction Objectives
+[W5-INSPIRED] Loaded training metadata -> 5 samples
+[W5-INSPIRED] Generating text embeddings...
+[W5-INSPIRED] Generating audio embeddings...
+
+[W5-INSPIRED] Training for 8 epochs...
+[W5-INSPIRED] Loss weights: Contrastive=1.0, Masked=0.5
+
+Epoch 1/8
+  Total Loss: 2.5627
+  Contrastive: 2.3314
+  Masked Text: 0.0041
+  Masked Audio: 0.4584
+Epoch 2/8
+  Total Loss: 6.7887
+  Contrastive: 6.7887
+  Masked Text: 0.0000
+  Masked Audio: 0.0000
+Epoch 3/8
+  Total Loss: 4.6068
+  Contrastive: 4.1060
+  Masked Text: 0.0035
+  Masked Audio: 0.9981
+Epoch 4/8
+  Total Loss: 2.9191
+  Contrastive: 2.9176
+  Masked Text: 0.0030
+  Masked Audio: 0.0000
+Epoch 5/8
+  Total Loss: 3.3021
+  Contrastive: 3.3021
+  Masked Text: 0.0000
+  Masked Audio: 0.0000
+Epoch 6/8
+  Total Loss: 2.7684
+  Contrastive: 2.6955
+  Masked Text: 0.0000
+  Masked Audio: 0.1459
+Epoch 7/8
+  Total Loss: 1.8525
+  Contrastive: 1.8525
+  Masked Text: 0.0000
+  Masked Audio: 0.0000
+Epoch 8/8
+  Total Loss: 2.0270
+  Contrastive: 1.7184
+  Masked Text: 0.0000
+  Masked Audio: 0.6172
+
+[W5-INSPIRED] Encoder model saved -> week_inspired_output\week5_inspired_encoder.joblib
+[W5-INSPIRED] Train embeddings saved -> week_inspired_output\inspired_speech_text_embeddings_train.csv
+[W5-INSPIRED] Embedding shape: (5, 512)
+[W5-INSPIRED] Columns: 256 text + 256 audio = 512 total
+
+[W5-INSPIRED] ===== TRAINING SUMMARY =====
+[W5-INSPIRED] Dataset size: 5 samples
+[W5-INSPIRED] Text embedding dim: 384
+[W5-INSPIRED] Audio embedding dim: 64
+[W5-INSPIRED] Projection dim: 256
+[W5-INSPIRED] Training epochs: 8
+[W5-INSPIRED] Batch size: 32
+[W5-INSPIRED] Objectives: Contrastive Learning + Masked Prediction

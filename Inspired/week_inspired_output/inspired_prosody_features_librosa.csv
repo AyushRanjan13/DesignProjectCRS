@@ -1,0 +1,6 @@
+f0_mean,f0_std,rms_mean,spec_cent_mean,tempo,audio_path
+91.03555576585407,21.855309595328134,0.04231418,891.657601309164,234.90767045454547,C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Inspired\week_inspired_output\Training\AudioFiles\inspired_train_dialogue_1_Male_A.wav
+100.48642817213195,15.07628175448733,0.06832966,1448.3169565148157,117.45383522727273,C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Inspired\week_inspired_output\Training\AudioFiles\inspired_train_dialogue_2_Male_A.wav
+0.0,0.0,0.028507978,779.9426910607289,287.109375,C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Inspired\week_inspired_output\Training\AudioFiles\inspired_train_dialogue_3_Male_B.wav
+88.39118631109352,10.05443911598715,0.08436779,1162.7562482118435,143.5546875,C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Inspired\week_inspired_output\Training\AudioFiles\inspired_train_dialogue_4_Male_B.wav
+91.44263818316375,12.705522077192063,0.087416604,1460.5750378117075,107.666015625,C:\Users\Rajeev Ranjan\Desktop\DP_CRS\Inspired\week_inspired_output\Training\AudioFiles\inspired_train_dialogue_5_Male_A.wav
