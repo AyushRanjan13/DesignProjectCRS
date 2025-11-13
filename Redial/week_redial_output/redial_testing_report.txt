@@ -6,7 +6,7 @@
 
 ================= [WEEK4 TEST PERFORMANCE] =================
 Samples: 23322
-Accuracy: 0.8800
+Accuracy: 0.8500
               precision    recall  f1-score   support
 
 high_arousal       0.80      0.86     0.89         22628
