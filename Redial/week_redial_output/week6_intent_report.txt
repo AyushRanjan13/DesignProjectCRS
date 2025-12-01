@@ -1,0 +1,132 @@
+
+=================================================================
+WEEK 6: INTENT DETECTION FINE-TUNING (ReDial)
+=================================================================
+
+[WEEK6] Starting Week 6 pipeline...
+[WEEK6] Output directory: week_redial_output
+
+[WEEK6] Step 1: Loading Week-4 metadata + Week-5 embeddings...
+[WEEK6] Validating input files...
+[WEEK6] Checking output directory: week_redial_output
+[WEEK6] Found 11 files in output directory:
+[WEEK6]   - emotion_model_redial.joblib (0.11 MB)
+[WEEK6]   - metadata_with_acoustic_emotion.csv (24.14 MB)
+[WEEK6]   - redial_acoustic_features_opensmile.csv (0.01 MB)
+[WEEK6]   - redial_combined_acoustic_features.csv (0.01 MB)
+[WEEK6]   - redial_prosody_features_librosa.csv (0.00 MB)
+[WEEK6]   - redial_testing_report.txt (0.00 MB)
+[WEEK6]   - speech_text_embeddings_train.csv (990.46 MB)
+[WEEK6]   - week5_encoder.joblib (1.89 MB)
+[WEEK6]   - week5_report.txt (0.00 MB)
+
+[WEEK6] ✓ Found metadata: week_redial_output\metadata_with_acoustic_emotion.csv
+[WEEK6] ✓ Found embeddings: week_redial_output\speech_text_embeddings_train.csv
+[WEEK6] ✓ Found encoder: week_redial_output\week5_encoder.joblib
+
+[WEEK6] Loading metadata from: metadata_with_acoustic_emotion.csv
+[WEEK6] Loading embeddings from: speech_text_embeddings_train.csv
+[WEEK6] Metadata rows: 182150
+[WEEK6] Embedding rows: 182150
+[WEEK6] ✓ Input validation successful!
+
+[WEEK6] Step 2: Dataset Summary:
+[WEEK6]   - Total samples: 182150
+[WEEK6]   - Embedding dimension: 512
+[WEEK6]   - Embedding shape: (182150, 512)
+
+[WEEK6] Step 3: Generating rule-based intent labels...
+[WEEK6] Applying rule-based intent labeling...
+[WEEK6] Generated 182150 intent labels
+
+[WEEK6] Intent distribution (rule-based labels):
+[WEEK6]   OTHER: 96255 (52.8%)
+[WEEK6]   GREETING: 39338 (21.6%)
+[WEEK6]   GIVE_PREFERENCE: 12074 (6.6%)
+[WEEK6]   FEEDBACK_POS: 11464 (6.3%)
+[WEEK6]   THANK: 10674 (5.9%)
+[WEEK6]   CLOSING: 7540 (4.1%)
+[WEEK6]   ASK_RECOMMENDATION: 2599 (1.4%)
+[WEEK6]   FEEDBACK_NEG: 1318 (0.7%)
+[WEEK6]   ASK_INFO: 888 (0.5%)
+
+[WEEK6] Step 4: Training intent classifier on joint embeddings...
+[WEEK6] Preparing data for intent classification...
+[WEEK6] Detected 9 intent classes: [np.str_('ASK_INFO'), np.str_('ASK_RECOMMENDATION'), np.str_('CLOSING'), np.str_('FEEDBACK_NEG'), np.str_('FEEDBACK_POS'), np.str_('GIVE_PREFERENCE'), np.str_('GREETING'), np.str_('OTHER'), np.str_('THANK')]
+[WEEK6] Class distribution:
+[WEEK6]   ASK_INFO: 888 samples
+[WEEK6]   ASK_RECOMMENDATION: 2599 samples
+[WEEK6]   CLOSING: 7540 samples
+[WEEK6]   FEEDBACK_NEG: 1318 samples
+[WEEK6]   FEEDBACK_POS: 11464 samples
+[WEEK6]   GIVE_PREFERENCE: 12074 samples
+[WEEK6]   GREETING: 39338 samples
+[WEEK6]   OTHER: 96255 samples
+[WEEK6]   THANK: 10674 samples
+
+[WEEK6] Training classifier...
+[WEEK6] Train samples: 145720 | Validation samples: 36430
+[WEEK6] Evaluating on validation set...
+
+=================================================================
+WEEK 6 INTENT CLASSIFIER RESULTS
+=================================================================
+Train samples: 145720 | Validation samples: 36430
+Number of intent classes: 9
+Intent classes: [np.str_('ASK_INFO'), np.str_('ASK_RECOMMENDATION'), np.str_('CLOSING'), np.str_('FEEDBACK_NEG'), np.str_('FEEDBACK_POS'), np.str_('GIVE_PREFERENCE'), np.str_('GREETING'), np.str_('OTHER'), np.str_('THANK')]
+
+Validation Accuracy: 0.7127
+
+Classification Report:
+                    precision    recall  f1-score   support
+
+          ASK_INFO       0.76      0.46      0.57       178
+ASK_RECOMMENDATION       0.65      0.55      0.60       520
+           CLOSING       0.92      0.91      0.91      1508
+      FEEDBACK_NEG       0.61      0.08      0.14       263
+      FEEDBACK_POS       0.67      0.37      0.48      2293
+   GIVE_PREFERENCE       0.57      0.44      0.50      2415
+          GREETING       0.79      0.43      0.55      7867
+             OTHER       0.70      0.91      0.79     19251
+             THANK       0.75      0.68      0.71      2135
+
+          accuracy                           0.71     36430
+         macro avg       0.71      0.54      0.58     36430
+      weighted avg       0.72      0.71      0.69     36430
+
+
+Confusion Matrix (rows=true, cols=pred):
+[[   82     0     0     0     0     0     4    91     1]
+ [    1   286     0     0     1     0    43   185     4]
+ [    0     0  1372     0     8     0     4    78    46]
+ [    0     0     0    20     1     4     2   235     1]
+ [    2     6     0     0   852    23   106  1227    77]
+ [    0     4     0     2    24  1064    54  1267     0]
+ [    0    72    12     7    94   201  3350  4044    87]
+ [   23    53     2     4   225   577   613 17490   264]
+ [    0    16   107     0    70     5    41   447  1449]]
+=================================================================
+
+[WEEK6] Step 5: Saving intent-aware speech model...
+[WEEK6] ✓ Intent model saved → week_redial_output\week6_intent_model.joblib
+[WEEK6] Model contains 9 intent classes
+
+=================================================================
+WEEK 6 FINAL SUMMARY
+=================================================================
+Total samples processed: 182150
+Feature dimension: 512
+Number of intents: 9
+Intent classes: ASK_INFO, ASK_RECOMMENDATION, CLOSING, FEEDBACK_NEG, FEEDBACK_POS, GIVE_PREFERENCE, GREETING, OTHER, THANK
+Validation accuracy: 0.7127
+
+Objective: Fine-tuned CRS intent classifier
+Method: Logistic Regression on speech-text embeddings
+
+Output files:
+  1. Model: week6_intent_model.joblib
+  2. Report: week6_intent_report.txt
+=================================================================
+
+[WEEK6] ✓✓✓ Week 6 pipeline completed successfully! ✓✓✓
+

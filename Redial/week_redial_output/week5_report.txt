@@ -10,45 +10,45 @@
 [WEEK5] Loss weights: Contrastive=1.0, Masked=0.5
 
 Epoch 1/8
-  Total Loss: 3.4702
-  Contrastive: 3.4694
-  Masked Text: 0.0016
-  Masked Audio: 0.0000
-Epoch 2/8
-  Total Loss: 3.4669
-  Contrastive: 3.4660
-  Masked Text: 0.0017
-  Masked Audio: 0.0000
-Epoch 3/8
-  Total Loss: 3.4665
-  Contrastive: 3.4657
-  Masked Text: 0.0017
-  Masked Audio: 0.0000
-Epoch 4/8
-  Total Loss: 3.4665
-  Contrastive: 3.4656
+  Total Loss: 5.0113
+  Contrastive: 3.4661
   Masked Text: 0.0018
+  Masked Audio: 3.0887
+Epoch 2/8
+  Total Loss: 282.3183
+  Contrastive: 3.4657
+  Masked Text: 0.0020
+  Masked Audio: 557.7032
+Epoch 3/8
+  Total Loss: 18.7307
+  Contrastive: 3.4659
+  Masked Text: 0.0020
+  Masked Audio: 30.5278
+Epoch 4/8
+  Total Loss: 3.4675
+  Contrastive: 3.4666
+  Masked Text: 0.0020
   Masked Audio: 0.0000
 Epoch 5/8
-  Total Loss: 18.5181
-  Contrastive: 3.4656
-  Masked Text: 0.0019
-  Masked Audio: 30.1032
+  Total Loss: 416.0555
+  Contrastive: 3.4654
+  Masked Text: 0.0020
+  Masked Audio: 825.1781
 Epoch 6/8
-  Total Loss: 8.2831
+  Total Loss: 17.7179
   Contrastive: 3.4654
-  Masked Text: 0.0019
-  Masked Audio: 9.6335
+  Masked Text: 0.0021
+  Masked Audio: 28.5030
 Epoch 7/8
-  Total Loss: 3.4665
-  Contrastive: 3.4656
-  Masked Text: 0.0019
-  Masked Audio: 0.0000
+  Total Loss: 3.4666
+  Contrastive: 3.4655
+  Masked Text: 0.0022
+  Masked Audio: 0.0001
 Epoch 8/8
-  Total Loss: 7.4251
-  Contrastive: 3.4654
-  Masked Text: 0.0019
-  Masked Audio: 7.9175
+  Total Loss: 3.4666
+  Contrastive: 3.4655
+  Masked Text: 0.0022
+  Masked Audio: 0.0000
 
 [WEEK5] Aligner model saved -> week_redial_output\week5_encoder.joblib
 [WEEK5] Train embeddings saved -> week_redial_output\speech_text_embeddings_train.csv
